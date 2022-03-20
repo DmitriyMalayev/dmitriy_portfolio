@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { projects } from "../data";
 
 export default function Projects() {
@@ -17,6 +17,7 @@ export default function Projects() {
           </Link>
         ))}
       </nav>
+      <Outlet />
     </div>
   );
 }

@@ -26,15 +26,7 @@ export default function App() {
         <Link to="/testimonials">Testimonials</Link>
         <Link to="/contact">Contact</Link>
       </nav>
-      {/* 
-      <Navbar />
-      <Main />
-      <About />
-      <Projects /> */}
-      {/* <Projects />
-      <Skills />
-      <Testimonials />
-      <Contact />  */}
+      <Outlet />
     </div>
   );
 }
