@@ -20,7 +20,7 @@ render(
           <Route
             index
             element={
-              <main style={{ padding: "1rem" }}>
+              <main >
                 <p>Select A Project</p>
               </main>
             }
@@ -37,7 +37,7 @@ render(
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
+            <main >
               <p>There's nothing here!</p>
             </main>
           }

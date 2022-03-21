@@ -5,12 +5,9 @@ import { projects } from "../data";
 export default function Projects() {
   let projectData = projects;
   return (
-    <div style={{ display: "flex" }}>
+    <div>
       <nav
-        style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
-        }}
+        
       >
         {projectData.map((project) => (
           <NavLink
