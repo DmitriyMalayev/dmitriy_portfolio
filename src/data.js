@@ -58,3 +58,26 @@ export const skills = [
   "GraphQL",
   "Material UI",
 ];
+
+export function getProjects() {
+  return projects;
+}
+export function getProject(title) {
+  return projects.find((project) => project.title === title);
+}
+
+export function getSkills() {
+  return skills;
+}
+export function getSkill(info) {
+  return skills.find((skill) => skill.info === info);
+}
+
+export function getTestimonials() {
+  return testimonials;
+}
+export function getTestimonial(quote) {
+  return testimonials.find((testimonial) => testimonial.quote === quote);
+}
+
+

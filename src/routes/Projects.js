@@ -1,20 +1,31 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { projects } from "../data";
 
 export default function Projects() {
-  let projectsData = projects;
+  let projectData = projects;
   return (
-    <div className="flex flex-wrap -m-4">
-      <nav>
-        {projectsData.map((project) => (
-          <Link
-            style={{ display: "block", margin: "1rem 0" }}
+    <div style={{ display: "flex" }}>
+      <nav
+        style={{
+          borderRight: "solid 1px",
+          padding: "1rem",
+        }}
+      >
+        {projectData.map((project) => (
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                display: "block",
+                margin: "1rem 0",
+                color: isActive ? "red" : "",
+              };
+            }}
             to={`/projectData/${project.title}`}
             key={project.image}
           >
             {project.description}
-          </Link>
+          </NavLink>
         ))}
       </nav>
       <Outlet />

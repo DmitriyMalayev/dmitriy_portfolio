@@ -15,8 +15,16 @@ const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="project" element={<Projects />}>
+      <Route path="/" element={<App />} >
+        <Route path="projects" element={<Projects />}>
+          <Route
+            index
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>Select A Project</p>
+              </main>
+            }
+          />
           <Route path=":projectTitle" element={<Project />} />
         </Route>
 
