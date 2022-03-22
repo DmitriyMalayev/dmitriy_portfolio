@@ -10,17 +10,18 @@ import Project from "./routes/Project";
 
 import Skills from "./routes/Skills";
 import Testimonials from "./routes/Testimonials";
+import "./index.css"
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} >
+      <Route path="/" element={<App />}>
         <Route path="projects" element={<Projects />}>
           <Route
             index
             element={
-              <main >
+              <main>
                 <p>Select A Project</p>
               </main>
             }
@@ -37,7 +38,7 @@ render(
         <Route
           path="*"
           element={
-            <main >
+            <main>
               <p>There's nothing here!</p>
             </main>
           }
