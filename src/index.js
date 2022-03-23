@@ -34,15 +34,12 @@ render(
         <Route path="main" element={<Main />} />
         <Route path="skills" element={<Skills />} />
         <Route path="testimonials" element={<Testimonials />} />
-
         <Route
           path="*"
           element={
             <main>
               <p>There's nothing here!</p>
-            </main>
-          }
-        />
+            </main>} />
       </Route>
     </Routes>
   </BrowserRouter>,
