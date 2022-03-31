@@ -4,8 +4,8 @@ import React from "react";
 
 export default function App() {
   return (
-    <>
-      {/* <Navbar /> */}
-    </>
+    <div className="bg-sky-100">
+      <h1>Hello World</h1>
+    </div>
   );
 }
