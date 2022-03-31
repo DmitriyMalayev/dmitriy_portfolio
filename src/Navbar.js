@@ -3,28 +3,22 @@ import React, { Component } from "react";
 const menuItems = [
   {
     title: "Main",
-    url: "/main",
-  },
+    url: "/main", },
   {
     title: "About",
-    url: "/about",
-  },
+    url: "/about",},
   {
     title: "Projects",
-    url: "/projects",
-  },
+    url: "/projects",},
   {
     title: "Skills",
-    url: "/skills",
-  },
+    url: "/skills",},
   {
     title: "Contact",
-    url: "/contact",
-  },
+    url: "/contact",},
   {
     title: "Testimonials",
-    url: "/testimonials",
-  },
+    url: "/testimonials",},
 ];
 export default class Navbar extends Component {
   render() {
@@ -39,5 +33,4 @@ export default class Navbar extends Component {
             );})}
         </ul>
       </nav>
-    );
-  }}
+    )}}
