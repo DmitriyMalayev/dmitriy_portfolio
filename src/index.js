@@ -1,30 +1,23 @@
-import { render } from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
-import Main from "./routes/Main";
 import Projects from "./routes/Projects";
-import Project from "./routes/Project";
-import Navbar from "./Navbar"
-import Skills from "./routes/Skills";
-import Testimonials from "./routes/Testimonials";
-import "./index.css";
 
-const rootElement = document.getElementById("root");
-render(
-  <BrowserRouter>
-    <Navbar />
+ReactDOM.render(
+  <Router>
     <Routes>
-      <Route element={<App />} path="/" />
-      <Route element={<About />} path="/About" />
-      <Route element={<Main />} path="/Main" />
-      <Route element={<Projects />} path="/Projects" />
-      <Route element={<Project />} path="/Project" />
-      <Route element={<Skills />} path="/Skills" />
-      <Route element={<Testimonials />} path="/Testimonials" />
-      <Route element={<Contact />} path="/Contact" />
+      <Route path="/" element={<App />}>
+        <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Projects />} />
+      </Route>
     </Routes>
-  </BrowserRouter>,
-  rootElement
+  </Router>,
+  document.getElementById("root")
 );
