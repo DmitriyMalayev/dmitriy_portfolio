@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <section id="about">
-      <div>
+      <div className="border border-sky-500">
         <div>
           <h1 className="text-blue-500">
             Hello my name is Dmitriy Malayev.

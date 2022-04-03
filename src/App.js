@@ -1,20 +1,19 @@
 import { Link, Outlet } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <h1 className="bg-blue-400">Hello world!</h1>
+    <div >
       <nav>
-        <ul className="flex items-center justify-between flex-wrap bg-blue-400 mx-auto">
-          <Link className="hover:text-blue-800" to="/home">
+        <ul className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white">
+          <Link className="hover:bg-blue-500" to="/home">
             Home
           </Link>
-          <Link className="hover:text-blue-800" to="/about">
+          <Link className="hover:bg-blue-500" to="/about">
             About
           </Link>
-          <Link className="hover:text-blue-800" to="/contact">
+          <Link className="hover:bg-blue-500" to="/contact">
             Contact
           </Link>
-          <Link className="hover:text-blue-800" to="/projects">
+          <Link className="hover:bg-blue-500" to="/projects">
             Projects
           </Link>
         </ul>
