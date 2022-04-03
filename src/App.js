@@ -1,9 +1,16 @@
 import { Link, Outlet } from "react-router-dom";
+import Logo from "./logo.svg";
+
 function App() {
   return (
-    <div >
+    <div>
       <nav>
-        <ul className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-white">
+        <ul className="w-full h-[100px] flex justify-between items-center bg-[#d3c6be] text-white">
+          <img
+            src={Logo}
+            alt="Logo"
+            style={{ width: "300px", left: "80px", top: "100px" }}
+          />
           <Link className="hover:bg-blue-500" to="/home">
             Home
           </Link>
