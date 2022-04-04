@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "./logo.svg";
+import Logo from "../logo.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -113,7 +107,7 @@ const Navbar = () => {
               >
                 Resume <BsFillPersonLinesFill size={30} />{" "}
               </a>
-            </li> 
+            </li>
           </ul>
         </div>
       </nav>
