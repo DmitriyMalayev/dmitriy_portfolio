@@ -1,6 +1,6 @@
 import React from "react";
-import WorkImg from "../assets/img/workImg.png";
-
+import WorkImg from "../assets/workImg.jpeg";
+// "../assets/img/workImg.png";
 const Work = () => {
   return (
     <div name="work" className="w-full md:h-scren text-slate-300 bg-slate-500">
@@ -16,7 +16,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${WorkImg})` }} 
             className="shadow-lg shadow-slate-800 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -25,7 +25,7 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="/"> {/* Add Links to projects, apps, reposit, and more */}
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-slate-700">
                     Demo
                   </button>

@@ -1,92 +1,47 @@
-// src/components/Contact.js
 import React from "react";
 
-export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
-
+const Contact = () => {
   return (
-    <section id="contact">
-      <div>
-        <div>
-          {/* <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          /> */}
-          <div>
-            <div>
-              <h2>Address</h2>
-              <p>
-                98-25 65th Road Apt 3 D <br />
-                Rego Park, NY 11374
-              </p>
-            </div>
-            <div>
-              <h2>Email</h2>
-              <a href="classnameEmail">dmitriy.malayev@gmail.com</a>
-              <h2>Mobile Number</h2>
-              <p>347-761-4403</p>
-            </div>
-          </div>
+    <div
+      name="contact"
+      className="w-full h-screen bg-slate-500 justify-center items-center p-4"
+    >
+      <form
+        method="POST"
+        action="https://getform.io/f/a30d9116-d1d7-44e9-9b87-1b526592e428"
+        className="flex flex-col max-w-[600px] w-full"
+      >
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-slate-300">
+            Contact
+          </p>
+          <p className="text-slate-300 py-4">
+            Submit the form below or send me an email at
+            <a href="mailto:dmitriy.malayev@gmail.com">
+              dmitriy.malayev@gmail.com
+            </a>
+          </p>
         </div>
-        <form netlify name="contact" onSubmit={handleSubmit}>
-          <h2>Hire Me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div >
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div >
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
+        <input type="text" placeholder="Name" name="name" />
+        <input
+          className="my-4 p-2 bg-slate-200"
+          type="email"
+          placeholder="Email"
+          name="email"
+        />
+        <textarea
+          className="bg-slate-200 p-2"
+          name="message"
+          row="10"
+          placeholder="Message"
+        ></textarea>
+        <button className="bg-slate-200 border-2 hover-bg-orange-600 hover-border-orange-600 px-4 py-3 my-8 mx-auto flex items-center">
+          Let's Collaberate
+        </button>
+      </form>
+      Contact
+    </div>
   );
-}
+};
+
+export default Contact;
