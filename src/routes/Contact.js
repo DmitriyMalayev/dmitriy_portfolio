@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-slate-500 justify-center items-center p-4"
+      className="w-full h-screen bg-slate-500  flex justify-center items-center p-4"
     >
       <form
         method="POST"
@@ -22,9 +22,14 @@ const Contact = () => {
             </a>
           </p>
         </div>
-        <input type="text" placeholder="Name" name="name" />
         <input
-          className="my-4 p-2 bg-slate-200"
+          className="bg-slate-200 my-4 p-2"
+          type="text"
+          placeholder="Name"
+          name="name"
+        />
+        <input
+          className="bg-slate-200 my-4 p-2"
           type="email"
           placeholder="Email"
           name="email"
@@ -39,7 +44,6 @@ const Contact = () => {
           Let's Collaberate
         </button>
       </form>
-      Contact
     </div>
   );
 };
