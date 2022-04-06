@@ -11,14 +11,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div>
-        <img
-          src={Logo}
-          alt="Logo"
-          style={{ width: "300px", left: "80px", top: "100px" }}
-        />
-      </div>
-      <ul className="hidden md:flex">
+      <img src={Logo} alt="Logo" />
+      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold">
         {" "}
         {/* Menu */}{" "}
         <li>
@@ -108,7 +102,7 @@ const Navbar = () => {
           </li>{" "}
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
-              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-zinc-300"
+              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-orange-500"
               href="/"
             >
               Resume <BsFillPersonLinesFill size={30} />{" "}

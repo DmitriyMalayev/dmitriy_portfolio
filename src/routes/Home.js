@@ -6,10 +6,10 @@ const Home = () => {
     <div name="home" className="w-full h-screen bg-slate-500">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-orange-600">Hello my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-slate-200">
-          Dmitriy Malayev
-        </h1>
+        <p className="text-orange-200 text-4xl">
+          Hello my name is Dmitriy Malayev
+        </p>
+
         <h2 className="text-4xl sm:text-7xl font-bold text-slate-300">
           I'm a Full Stack Software Engineer
         </h2>
