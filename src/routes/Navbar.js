@@ -10,30 +10,30 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700">
       <div className="">
-        <img src={Logo} alt="Logo" className="h-8 w-8 bottom-0 " />
+        <img src={Logo} alt="Logo" style={{ width: "50px" }} />
       </div>
-      <div>
-        <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold">
-          {/* Menu */}
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/skills">Skills</a>
-          </li>
-          <li>
-            <a href="/work">Work</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+
+      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold">
+        {/* Menu */}
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/skills">Skills</a>
+        </li>
+        <li>
+          <a href="/work">Work</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+
       {/* Hamburger Menu */}
       <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
