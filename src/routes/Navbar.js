@@ -10,12 +10,12 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700 gap-10">
       <div className="">
         <img src={Logo} alt="Logo" style={{ width: "50px" }} />
       </div>
 
-      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold">
+      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow">
         {/* Menu */}
         <li>
           <a href="/">Home</a>
@@ -78,12 +78,12 @@ const Navbar = () => {
         </ul>
       </div>
       {/* Social Icons */}
-      <div className="flex fixed flex-col top-[35%] left-0">
+      <div className="flex fixed flex-col top-[35%] ">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
               className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600"
-              href="/"
+              href="https://www.linkedin.com/in/dmitriymalayev/"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
               className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-black"
-              href="/"
+              href="https://github.com/DmitriyMalayev"
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -99,7 +99,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
               className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-900"
-              href="/"
+              href="mailto:dmitriy.malayev@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>

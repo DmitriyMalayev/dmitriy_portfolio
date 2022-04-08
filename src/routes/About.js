@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
-            <p>Hello. Welcome to my website. </p>
+            <p>Welcome To <br/> My Website.</p>
           </div>
           <div>
             <p className="sm: text-xl leading-relaxed">
