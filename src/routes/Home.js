@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-slate-500 text-slate-200">
+    <div name="home" className="w-full h-screen bg-slate-500 text-slate-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -11,10 +11,10 @@ const Home = () => {
             </p>
           </div>
         </div>
+        
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
-            <p className="content-start">Welcome </p>
-            <p>To My Website</p>
+            <p>Welcome <br/>To My Website</p>
           </div>
           <div>
             <p className="sm: text-xl leading-relaxed">
