@@ -2,10 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div
-      name="contact"
-      className="w-full h-screen bg-slate-500  flex justify-center items-center p-4"
-    >
+    <div id="contact" className="w-full h-screen bg-slate-500 text-slate-300">
+        <div className="flex flex-col justify-center items-center w-full h-full">
+      
       <form
         method="POST"
         action="https://getform.io/f/a30d9116-d1d7-44e9-9b87-1b526592e428"
@@ -40,10 +39,11 @@ const Contact = () => {
           row="10"
           placeholder="Message"
         ></textarea>
-        <button className="bg-slate-200 border-2 hover-bg-orange-600 hover-border-orange-600 px-4 py-3 my-8 mx-auto flex items-center">
+        <button className="bg-slate-500 border-2 hover-bg-orange-600 hover-border-orange-600 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaberate
         </button>
-      </form>
+        </form>
+        </div>
     </div>
   );
 };
