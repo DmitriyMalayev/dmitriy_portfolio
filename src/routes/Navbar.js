@@ -15,26 +15,26 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700 gap-10">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700 gap-10  ">
       <div>
         <img src={Logo} alt="Logo" style={{ width: "50px" }} />
       </div>
 
       {/* menu */}
-      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow">
-        <li>
+      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow ">
+        <li className="hover:text-red-600 hover:text-3xl">
           <a href="#home">Home</a>
         </li>
-        <li>
+        <li className="hover:text-red-600 hover:text-3xl">
           <a href="#about">About</a>
         </li>
-        <li>
+        <li className="hover:text-red-600 hover:text-3xl">
           <a href="#skills">Skills</a>
         </li>
-        <li>
+        <li className="hover:text-red-600 hover:text-3xl">
           <a href="#projects">Projects</a>
         </li>
-        <li>
+        <li className="hover:text-red-600 hover:text-3xl">
           <a href="#contact">Contact</a>
         </li>
       </ul>

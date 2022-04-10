@@ -12,7 +12,7 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
             <div className="sm:text-right pb-8 pl-4">
-              <p className="text-4xl font-bold inline border-b-4 border-orange-600">
+              <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
                 Home
               </p>
             </div>
@@ -20,7 +20,7 @@ const Home = () => {
 
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
             <div className="sm:text-right text-4xl font-bold">
-              <p>
+              <p className="font-dance">
                 Welcome <br />
                 To My Website
               </p>
