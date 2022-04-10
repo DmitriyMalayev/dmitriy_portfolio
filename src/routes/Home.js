@@ -2,7 +2,7 @@ import React from "react";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
-import Work from "./Work";
+import Projects from "./Projects";
 
 // import Navbar from "./Navbar";
 const Home = () => {
@@ -38,10 +38,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      ,
       <About />
       <Skills />
-      <Work />
+      <Projects />
       <Contact />
     </>
   );
