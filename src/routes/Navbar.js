@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../logo.png";
 
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -88,34 +83,34 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
-              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600"
+              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[0px] duration-300 bg-blue-600 pl-4"
               href="https://www.linkedin.com/in/dmitriymalayev/"
             >
-              LinkedIn <FaLinkedin size={30} />
+              LinkedIn <FaLinkedin size={35} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
-              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-black"
+              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[0px] duration-300 bg-black pl-4"
               href="https://github.com/DmitriyMalayev"
             >
-              GitHub <FaGithub size={30} />
+              GitHub <FaGithub size={35} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
-              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-900"
+              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[0px] duration-300 bg-blue-900 pl-4"
               href="mailto:dmitriy.malayev@gmail.com"
             >
-              Email <HiOutlineMail size={30} />
+              Email <HiOutlineMail size={35} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a
-              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-orange-500"
-              href="/"
+              className="flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[0px] duration-300 bg-orange-500 pl-4"
+              href="https://docs.google.com/document/d/e/2PACX-1vRVyekYUVeK_As6_FKBVkpDyw2mT9yJKvK4DJ-r4dXlfBVdRLhqKZLw-gweO65Zj9Uly2yCoem7mS2V/pub"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              Resume <BsFillPersonLinesFill size={35} />
             </a>
           </li>
         </ul>

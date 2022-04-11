@@ -13,10 +13,9 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 ">
-          <div className="sm:text-right text-4xl font-bold">
+          <div className="sm:text-right text-4xl font-bold flex justify-end p-4">
             <p className="font-dance">
-            
-                <img src={Photo} alt="MyPhoto" style={{ width: "100px" }} />
+              <img src={Photo} alt="MyPhoto" className="w-40" />
             </p>
           </div>
           <div>
