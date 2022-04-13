@@ -8,20 +8,26 @@ const Work = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-orange-600">
+            <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
               Projects
             </p>
           </div>
         </div>
-        <iframe
-          width="1000"
-          height="563"
-          src="https://www.youtube.com/embed/videoseries?list=PLANPLv1uddy2yxI4XkFZkzTf4g3Z7fD1C"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div>
+          <p className="sm:text-xl leading-relaxed mb-6">
+            Below is a YouTube playlist of my apps.
+          </p>
+        </div>
+        <div className="w-full sm:max-w-3xl aspect-video">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/videoseries?list=PLANPLv1uddy2yxI4XkFZkzTf4g3Z7fD1C"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         {/* Container */}
         <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">

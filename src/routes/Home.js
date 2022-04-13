@@ -19,7 +19,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 ">
             <div className="sm:text-right text-4xl font-bold">
               <p className="font-dance">
                 Welcome <br />

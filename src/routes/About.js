@@ -13,14 +13,11 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 ">
-          <div className="sm:text-right text-4xl font-bold flex justify-end p-4">
-            <p className="font-dance">
-              <img src={Photo} alt="MyPhoto" className="w-40" />
-            </p>
+          <div className="sm:text-right text-4xl font-bold flex justify-end items-center p-4">
+            <img src={Photo} alt="MyPhoto" className="w-40" />
           </div>
           <div>
-            <p className="sm: text-xl leading-relaxed">
-              {" "}
+            <p className="sm:text-xl leading-relaxed">
               I am a Full-Stack Software Engineer with a background in Data
               Communications, <br /> Computer Science, and Account Management.
               <br /> I have a personable personality and solid skills in
