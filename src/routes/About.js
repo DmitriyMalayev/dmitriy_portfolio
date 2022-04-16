@@ -7,17 +7,17 @@ const About = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
+            <p className="text-6xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
               About Me
             </p>
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 ">
-          <div className="sm:text-right text-4xl font-bold flex justify-end items-center p-4">
-            <img src={Photo} alt="MyPhoto" className="w-40" />
+          <div className="sm:text-right text-4xl font-bold flex justify-end items-center p-6">
+            <img src={Photo} alt="MyPhoto" className="w-48" />
           </div>
           <div>
-            <p className="sm:text-xl leading-relaxed">
+            <p className="sm: text-2xl leading-relaxed w-[500px]">
               I am a Full-Stack Software Engineer with a background in Data
               Communications, <br /> Computer Science, and Account Management.
               <br /> I have a personable personality and solid skills in
