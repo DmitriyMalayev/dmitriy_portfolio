@@ -21,16 +21,14 @@ const Home = () => {
 
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 ">
             <div className="sm:text-right text-4xl font-bold">
-              <p className="font-dance sm:text-5xl">
-                Welcome To My Website
-              </p>
+              <p className="font-dance text-3xl text-orange-300 ">Welcome To My Website</p>
             </div>
             <div className="">
-              <p className="text-2xl leading-relaxed lg:w-[450px]">
-                {" "}
+              <p className="text-xl leading-relaxed lg:w-auto">
                 My name is Dmitriy Malayev. I am a Full-Stack Software Engineer
-                that's based in Queens, NY. Please feel free to explore all the
-                webpages of this website via the navigation links above.
+                that's based in Queens, NY. <br />
+                Please feel free to explore
+                all the webpages of this website via the navigation links above.
                 <br />
                 Also feel free to connect with me via the social icons on the
                 left side of the screen.

@@ -25,7 +25,7 @@ const Skills = () => {
             These are the languages and frameworks I have worked with:
           </h3>
 
-          <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-6 text-center py-8 px-52">
+          <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-2 text-center py-8 p-4 px-30">
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={HTML} alt="HTML Icon" />
               <p className="my-4">HTML</p>
@@ -33,19 +33,19 @@ const Skills = () => {
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={CSS} alt="CSS Icon" />
               <p className="my-4">CSS</p>
-            </div>{" "}
+            </div>
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={JS} alt="JS Icon" />
               <p className="my-4">JavaScript</p>
-            </div>{" "}
+            </div>
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
               <p className="my-4">React</p>
-            </div>{" "}
+            </div>
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={Node} alt="Node Icon" />
               <p className="my-4">Node</p>
-            </div>{" "}
+            </div>
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
               <img
                 className="w-20 mx-auto"
@@ -53,7 +53,7 @@ const Skills = () => {
                 alt="FireBase Icon"
               />
               <p className="my-4">FireBase</p>
-            </div>{" "}
+            </div>
             <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500">
               <img className="w-20 mx-auto" src={GitHub} alt="GitHub Icon" />
               <p className="my-4">GitHub</p>
