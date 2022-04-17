@@ -10,13 +10,37 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700 gap-10  ">
-      <div>
-        <img src={Logo} alt="Logo" style={{ width: "50px" }} />
+    <nav className="relative container mx-auto p-6 ">
+      <div className="flex items-center justify-between">
+        <div className="pt-2 ">
+          <img src={Logo} alt="Logo" className="w-20" />
+        </div>
+        <div className="hidden space-x-6 md:flex ">
+          <a className="hover:text-blue-500" href="#home">
+            Home
+          </a>
+          <a className="hover:text-blue-500" href="#about">
+            About
+          </a>
+          <a className="hover:text-blue-500" href="#skills">
+            Skills
+          </a>
+          <a className="hover:text-blue-500" href="#projects">
+            Projects
+          </a>
+          <a className="hover:text-blue-500" href="#contact">
+            Contact
+          </a>
+        </div>
+        <a
+          className="hidden p-3 px-6 pt-2 text-white bg-orange-600 rounded-full baseline hover:bg-emerald-500 md:block "
+          href="#contact"
+        >
+          Contact Me
+        </a>
       </div>
-
       {/* menu */}
-      <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow ">
+      {/* <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow ">
         <li className="hover:text-red-600 hover:text-3xl">
           <a href="#home">Home</a>
         </li>
@@ -32,12 +56,12 @@ const Navbar = () => {
         <li className="hover:text-red-600 hover:text-3xl">
           <a href="#contact">Contact</a>
         </li>
-      </ul>
+      </ul> */}
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      {/* <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
-      </div>
+      </div> */}
 
       {/* Mobile menu */}
       <ul
@@ -115,7 +139,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 
