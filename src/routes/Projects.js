@@ -18,7 +18,7 @@ const Work = () => {
             Below is a YouTube playlist of my apps.
           </p>
         </div>
-        <div className="w-full sm:max-w-3xl aspect-video">
+        <div className="w-full sm:max-w-5xl hover:scale-125 aspect-video">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/videoseries?list=PLANPLv1uddy2yxI4XkFZkzTf4g3Z7fD1C"

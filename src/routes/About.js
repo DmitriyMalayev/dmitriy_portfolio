@@ -13,8 +13,8 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 ">
-          <div className="sm:text-right text-4xl font-bold flex justify-start items-center p-6">
-            <img src={Photo} alt="MyPhoto" className="w-40" />
+          <div className="font-bold ">
+            <img src={Photo} alt="MyPhoto" className="w-40 float-right p-2 " />
           </div>
           <div>
             <p className="text-xl leading-relaxed lg:w-auto p-3">

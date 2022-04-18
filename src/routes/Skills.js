@@ -20,33 +20,33 @@ const Skills = () => {
             </p>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-[1000px]">
           <h3 className="text-center sm:text-2xl">
             These are the languages and frameworks I have worked with:
           </h3>
 
-          <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-2 text-center py-8 p-4 px-30">
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
+          <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-2 text-center py-8 p-4 px-20">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={HTML} alt="HTML Icon" />
               <p className="my-4">HTML</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={CSS} alt="CSS Icon" />
               <p className="my-4">CSS</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={JS} alt="JS Icon" />
               <p className="my-4">JavaScript</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
               <p className="my-4">React</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
               <img className="w-20 mx-auto" src={Node} alt="Node Icon" />
               <p className="my-4">Node</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500 pt-6">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
               <img
                 className="w-20 mx-auto"
                 src={FireBase}
@@ -54,11 +54,11 @@ const Skills = () => {
               />
               <p className="my-4">FireBase</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500">
               <img className="w-20 mx-auto" src={GitHub} alt="GitHub Icon" />
               <p className="my-4">GitHub</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500">
               <img
                 className="w-20 mx-auto"
                 src={Tailwind}
@@ -66,7 +66,7 @@ const Skills = () => {
               />
               <p className="my-4">TailwindCSS</p>
             </div>
-            <div className="shadow-md shadow-slate-800 hover:scale-110 duration-500">
+            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500">
               <img className="w-20 mx-auto" src={Mongo} alt="Mongo Icon" />
               <p className="my-4">MongoDB</p>
             </div>
