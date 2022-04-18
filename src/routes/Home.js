@@ -3,6 +3,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Slider from "./Slider";
 // import Resume from "./Resume";
 
 // import Navbar from "./Navbar";
@@ -41,6 +42,7 @@ const Home = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Slider/>
       {/* <Resume/> */}
     </>
   );
