@@ -1,8 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+@layer base {
+  body {
+    color: bg-slate-00;
+  }
+} */
+
+@layer utilities {
+  .custom-ring {
+    @apply focus:outline-none focus-visible:ring-4 ring-blue-400;
+  }
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
 
 /* @layer base {
   body {
