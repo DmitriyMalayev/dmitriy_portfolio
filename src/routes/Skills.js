@@ -10,66 +10,45 @@ import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
 
 const Skills = () => {
+  const skills = [
+    { title: "HTML", image: HTML },
+    { title: "CSS", image: CSS },
+    { title: "JS", image: JS },
+    { title: "ReactImg", image: ReactImg },
+    { title: "Node", image: Node },
+    { title: "Firebase", image: FireBase },
+    { title: "Github", image: GitHub },
+    { title: "TailwindCSS", image: Tailwind },
+    { title: "Mongo", image: Mongo },
+  ];
   return (
-    <div id="skills" className="w-full h-screen  text-slate-300">
+    <div
+      id="skills"
+      className="w-full pt-24 lg:h-screen lg:pt-0 text-slate-300"
+    >
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4 w-full">
+        <div className="max-w-[1000px] w-full">
+          <div className="sm:text-center pb-8 pl-4 sm:pl-0 smw-full">
             <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
               Skills
             </p>
           </div>
         </div>
-        <div className="w-[1000px]">
-          <h3 className="text-center sm:text-2xl">
-            These are the languages and frameworks I have worked with:
+        <div className="w-full sm:w-[1000px]">
+          <h3 className="sm:text-center text-xl px-2 text-slate-100">
+            These are the languages and frameworks that I have worked with:
           </h3>
-
-          <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-2 text-center py-8 p-4 px-20">
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
-              <img className="w-20 mx-auto" src={HTML} alt="HTML Icon" />
-              <p className="my-4">HTML</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
-              <img className="w-20 mx-auto" src={CSS} alt="CSS Icon" />
-              <p className="my-4">CSS</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
-              <img className="w-20 mx-auto" src={JS} alt="JS Icon" />
-              <p className="my-4">JavaScript</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
-              <img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
-              <p className="my-4">React</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
-              <img className="w-20 mx-auto" src={Node} alt="Node Icon" />
-              <p className="my-4">Node</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500 pt-6">
-              <img
-                className="w-20 mx-auto"
-                src={FireBase}
-                alt="FireBase Icon"
-              />
-              <p className="my-4">FireBase</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={GitHub} alt="GitHub Icon" />
-              <p className="my-4">GitHub</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500">
-              <img
-                className="w-20 mx-auto"
-                src={Tailwind}
-                alt="TailWindCSS Icon"
-              />
-              <p className="my-4">TailwindCSS</p>
-            </div>
-            <div className="shadow-md shadow-slate-500 hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={Mongo} alt="Mongo Icon" />
-              <p className="my-4">MongoDB</p>
-            </div>
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center py-8 p-4 sm:px-20">
+            {skills.map((skill) => (
+              <div className="shadow-md shadow-slate-500 hover:scale-110 border-2 border-transparent hover:border-slate-500 duration-700 pt-6">
+                <img
+                  className="w-20 mx-auto shadow-blue-600/50 drop-shadow-lg"
+                  src={skill.image}
+                  alt="CSS Icon"
+                />
+                <p className="my-4">{skill.title}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

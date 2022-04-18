@@ -6,7 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Icons = () => {
   return (
-    <div className="hidden lg:flex fixed flex-col top-1/2 left-0">
+    <div className="hidden lg:flex fixed flex-col top-1/2 left-0 -translate-y-1/2">
       <ul>
         <li className="w-[160px] h-[60px] flex justify-between items-center ">
           <a

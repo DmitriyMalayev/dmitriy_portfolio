@@ -3,7 +3,10 @@
 import React from "react";
 const Contact = () => {
   return (
-    <div id="contact" className="w-full h-screen  text-slate-300">
+    <div
+      id="contact"
+      className="w-full pt-24 lg:h-screen lg:pt-0 text-slate-300"
+    >
       <div className="flex flex-col justify-center items-center w-full h-full ">
         <form
           method="POST"
