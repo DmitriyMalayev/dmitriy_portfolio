@@ -1,19 +1,9 @@
-// import React from "react";
 
-// const Contact = () => {
-//   return (
-//     <div id="contact" className="container mx-auto h-screen bg-red-500">
-//       <h1>Hello 1</h1>
-//     </div>
-//   );
-// }
-
-// export default Contact;
 
 import React from "react";
 const Contact = () => {
   return (
-    <div id="contact" className="w-full h-screen bg-slate-500 text-slate-300">
+    <div id="contact" className="w-full h-screen  text-slate-300">
       <div className="flex flex-col justify-center items-center w-full h-full ">
         <form
           method="POST"
@@ -34,27 +24,39 @@ const Contact = () => {
               </a>
             </p>
           </div>
-          <div className="sm:flex sm:justify-between sm:space-x-4">
+          <div className="sm:grid grid-cols-2 sm:justify-between sm:gap-2">
             <input
-              className="bg-slate-200 my-2 p-2 w-full"
+              className=" p-2 w-full custom-ring rounded-lg"
               type="text"
               placeholder="Name"
               name="name"
             />
             <input
-              className="bg-slate-200 my-2 p-2 w-full"
+              className=" p-2 w-full custom-ring rounded-lg"
               type="email"
               placeholder="Email"
               name="email"
             />
+            <input
+              className=" p-2 w-full custom-ring rounded-lg"
+              type="text"
+              placeholder="Website"
+              name="website"
+            />
+            <input
+              className=" p-2 w-full custom-ring rounded-lg"
+              type="text"
+              placeholder="LinkedIn"
+              name="linkedin"
+            />
+            <textarea
+              className="p-2 col-span-2 custom-ring rounded-lg"
+              name="message"
+              row="10"
+              placeholder="Message"
+            ></textarea>
           </div>
 
-          <textarea
-            className="bg-slate-200 mt-2 p-2"
-            name="message"
-            row="10"
-            placeholder="Message"
-          ></textarea>
           <button className="bg-slate-800 hover:blue-500 hover:bg-orange-600 px-8 py-4 my-8 mx-auto flex items-center outline-none font-dance w-full sm:w-auto justify-center">
             Let's Collaberate
           </button>

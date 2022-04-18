@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../logo.png";
+import Logo from "../logo.svg";
 
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-100 text-orange-700 gap-10  ">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-orange-300/15 text-orange-700 gap-10  backdrop-blur-xl">
       <div>
         <img src={Logo} alt="Logo" style={{ width: "50px" }} />
       </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
       </ul>
 
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-1/2 left-0 bg-gray-200 ">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ">
             <a

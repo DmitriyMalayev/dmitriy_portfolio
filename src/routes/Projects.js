@@ -4,7 +4,7 @@ import React from "react";
 // import Recipes from "../assets/recipes.png";
 const Work = () => {
   return (
-    <div id="projects" className="w-full h-screen bg-slate-500 text-slate-300">
+    <div id="projects" className="w-full h-screen  text-slate-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
