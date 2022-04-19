@@ -11,6 +11,7 @@
 @layer utilities {
   .custom-ring {
     @apply focus:outline-none focus-visible:ring-4 ring-blue-400;
+    @apply space-y-20 
   }
 }
 

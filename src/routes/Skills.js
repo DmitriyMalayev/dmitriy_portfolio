@@ -9,6 +9,7 @@ import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
 
+
 const Skills = () => {
   const skills = [
     { title: "HTML", image: HTML },
@@ -38,7 +39,7 @@ const Skills = () => {
           <h3 className="sm:text-center text-xl px-2 text-slate-100">
             These are the languages and frameworks that I have worked with:
           </h3>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center py-8 p-4 sm:px-20">
+          <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-6 text-center py-8 p-4 sm:px-20">
             {skills.map((skill) => (
               <div className="shadow-md shadow-slate-500 hover:scale-110 border-2 border-transparent hover:border-slate-500 duration-700 pt-6">
                 <img

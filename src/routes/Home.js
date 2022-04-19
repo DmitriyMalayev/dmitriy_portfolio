@@ -43,7 +43,7 @@ const Home = () => {
               </div>
             </div>
             <div>
-              <p className="text-2xl leading-relaxed sm:pr-8 text-slate-100">
+              <p className="text-xl lg:text-2xl leading-relaxed sm:pr-8  text-slate-100">
                 My name is Dmitriy Malayev. I am a Full-Stack Software Engineer
                 that's based in Queens, NY. Please feel free to explore all the
                 webpages of this website via the navigation links above. Also
@@ -61,7 +61,7 @@ const Home = () => {
       {/* <PageWrapper title="test">
         <div>Test</div>
       </PageWrapper> */}
-      <SimpleSlider/>
+      <SimpleSlider />
       {/* <Resume/> */}
     </>
   );
