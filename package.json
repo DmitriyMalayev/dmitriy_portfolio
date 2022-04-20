@@ -1,5 +1,6 @@
 {
-  "name": "my-project",
+  "name": "dmitriy-malayevs-portfolio",
+  "homepage": "http://www.dmitriymalayev.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

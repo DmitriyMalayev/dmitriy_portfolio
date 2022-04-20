@@ -36,9 +36,13 @@ const Skills = () => {
           </div>
         </div>
         <div className="w-full sm:w-[1000px]">
-          <h3 className="sm:text-center text-xl px-2 text-slate-100">
-            These are the languages and frameworks that I have worked with:
-          </h3>
+          <div className="sm:text-center font-bold font-dance text-2xl sm:text-3xl text-orange-300 ">
+            <div>
+              <span>Languages & Frameworks &nbsp;</span>
+
+              <br className="hidden sm:block" />
+            </div>
+          </div>
           <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-6 text-center py-8 p-4 sm:px-20">
             {skills.map((skill) => (
               <div className="shadow-md shadow-slate-500 hover:scale-110 border-2 border-transparent hover:border-slate-500 duration-700 pt-6">
