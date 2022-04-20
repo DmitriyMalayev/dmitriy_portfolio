@@ -11,14 +11,14 @@ const Work = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4 w-full">
-            <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
+            <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100 ">
               Projects
             </p>
           </div>
         </div>
         <div className="w-full sm:w-[1000px]">
-          <h3 className="text-center text-xl px-2 text-slate-100">
-            Below is a YouTube playlist of my apps.
+          <h3 className="text-center font-bold font-dance text-2xl sm:text-3xl text-orange-300">
+            YouTube Playlist Of Apps.
           </h3>
         </div>
         <div className="w-full sm:max-w-6xl aspect-video">
