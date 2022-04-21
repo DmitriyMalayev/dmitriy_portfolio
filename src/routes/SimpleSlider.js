@@ -16,10 +16,10 @@ import Image5 from "../combined_certificates/05.jpg";
 import Image6 from "../combined_certificates/06.jpg";
 import Image7 from "../combined_certificates/07.jpg";
 import Image8 from "../combined_certificates/08.jpg";
-// import Image9 from "../combined_certificates/09.jpg";
-// import Image10 from "../combined_certificates/10.jpg";
-// import Image11 from "../combined_certificates/11.jpg";
-// import Image12 from "../combined_certificates/12.jpg";
+import Image9 from "../combined_certificates/09.jpg";
+import Image10 from "../combined_certificates/10.jpg";
+import Image11 from "../combined_certificates/11.jpg";
+import Image12 from "../combined_certificates/12.jpg";
 
 class SimpleSlider extends Component {
   render() {
@@ -57,7 +57,22 @@ class SimpleSlider extends Component {
           <img src={Image8} alt="Image8" />
           {/* <p className="legend">Legend 1</p> */}
         </div>
-
+        <div>
+          <img src={Image9} alt="Image9" />
+          {/* <p className="legend">Legend 1</p> */}
+        </div>
+        <div>
+          <img src={Image10} alt="Image10" />
+          {/* <p className="legend">Legend 1</p> */}
+        </div>
+        <div>
+          <img src={Image11} alt="Image11" />
+          {/* <p className="legend">Legend 1</p> */}
+        </div>
+        <div>
+          <img src={Image12} alt="Image12" />
+          {/* <p className="legend">Legend 1</p> */}
+        </div>
       </Carousel>
     );
   }

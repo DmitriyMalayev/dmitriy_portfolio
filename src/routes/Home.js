@@ -3,6 +3,8 @@ import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Footer from "./Footer";
+
 // import PageWrapper from "./PageWrapper";
 import SimpleSlider from "./SimpleSlider";
 // import Resume from "./Resume";
@@ -56,12 +58,14 @@ const Home = () => {
       </div>
       <About />
       <Skills />
+      <SimpleSlider />
       <Projects />
       <Contact />
+      <Footer />
+
       {/* <PageWrapper title="test">
         <div>Test</div>
       </PageWrapper> */}
-      <SimpleSlider />
       {/* <Resume/> */}
     </>
   );

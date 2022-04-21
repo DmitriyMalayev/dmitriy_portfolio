@@ -25,7 +25,7 @@ const Contact = () => {
               </a>
             </p>
           </div>
-          <div className="space-y-1 sm:grid grid-cols-2 sm:justify-between sm:gap-2  ">
+          <div className="grid grid-cols-1  sm:grid-cols-2 gap-2  ">
             <input
               className=" p-2 w-full custom-ring rounded-lg"
               type="text"
@@ -51,7 +51,7 @@ const Contact = () => {
               name="linkedin"
             />
             <textarea
-              className="p-2 w-full col-span-2 custom-ring rounded-lg"
+              className="p-2 w-full sm:col-span-2 custom-ring rounded-lg"
               name="message"
               row="10"
               placeholder="Message"
