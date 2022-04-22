@@ -4,11 +4,7 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Footer from "./Footer";
-import Certificates from "./SimpleSlider";
-
-// import PageWrapper from "./PageWrapper";
-// import Resume from "./Resume";
-// import Navbar from "./Navbar";
+import Certificates from "./Certificates";
 
 const Home = () => {
   return (

@@ -1,8 +1,6 @@
 import Navbar from "./routes/Navbar";
 import Home from "./routes/Home";
 
-
-
 // import About from "./routes/About";
 // import Skills from "./routes/Skills";
 // import Work from "./routes/Work";
