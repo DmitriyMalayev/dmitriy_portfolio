@@ -52,8 +52,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Certificates />
       <About />
+      <Certificates />
       <Skills />
       <Projects />
       <Contact />

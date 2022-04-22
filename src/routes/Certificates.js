@@ -27,6 +27,7 @@ const Certificates = () => {
                 <div>
                   <span>My Certificates</span>
                   <br className="hidden sm:block" />
+                  <br/>
                 </div>
               </div>
             </div>
