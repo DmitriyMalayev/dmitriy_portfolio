@@ -27,9 +27,9 @@ const Skills = () => {
         id="skills"
         className="w-full pt-24 lg:h-screen lg:pt-0 text-slate-300"
       >
-        <div className="flex flex-col justify-center items-center w-full h-full mx-auto p-4">
+        <div className="flex flex-col justify-center items-center w-full h-full mx-auto p-2">
           <div className="hidden sm:block max-w-[1000px] w-full ">
-            <div className="sm:text-center pb-8">
+            <div className="sm:text-center pb-4">
               <p className="text-4xl font-bold inline border-b-4 border-orange-600 text-cyan-100">
                 Skills
               </p>
@@ -42,7 +42,7 @@ const Skills = () => {
                 Skills
               </div>
 
-              <div className="text-center font-bold font-dance text-2xl sm:text-3xl text-orange-300 ">
+              <div className="sm:text-right md:text-center   font-bold font-dance text-2xl sm:text-3xl text-orange-300 ">
                 <div>
                   <span>Languages & Frameworks</span>
                   <br className="hidden sm:block" />
@@ -52,7 +52,10 @@ const Skills = () => {
             <div>
               <div className="w-full grid grid-cols-3 sm:grid-cols-3 gap-6 text-center py-8 p-4 sm:px-20">
                 {skills.map((skill) => (
-                  <div className="shadow-md shadow-slate-500 hover:scale-110 border-2 border-transparent hover:border-slate-500 duration-700 pt-6">
+                  <div
+                    className="shadow-md shadow-slate-500 hover:scale-110 border-2 border-transparent hover:border-slate-500 duration-700 pt-6"
+                    key={skill.title}
+                  >
                     <img
                       className="w-20 mx-auto shadow-blue-600/50 drop-shadow-lg"
                       src={skill.image}

@@ -33,6 +33,9 @@ const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
           <li className="hover:text-red-600 hover:text-3xl">
+            <a href="#certificates">Certificates</a>
+          </li>
+          <li className="hover:text-red-600 hover:text-3xl">
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -56,25 +59,21 @@ const Navbar = () => {
             </a>
           </li>
           <li className="py-6 text-4xl">
-            {" "}
             <a onClick={handleClick} href="#about">
               About
             </a>
           </li>
           <li className="py-6 text-4xl">
-            {" "}
             <a onClick={handleClick} href="#skills">
               Skills
             </a>
           </li>
           <li className="py-6 text-4xl">
-            {" "}
             <a onClick={handleClick} href="#projects">
               Projects
             </a>
           </li>
           <li className="py-6 text-4xl">
-            {" "}
             <a onClick={handleClick} href="#contact">
               Contact
             </a>

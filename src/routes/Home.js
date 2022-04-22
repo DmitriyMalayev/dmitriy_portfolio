@@ -4,9 +4,9 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import Certificates from "./SimpleSlider";
 
 // import PageWrapper from "./PageWrapper";
-import SimpleSlider from "./SimpleSlider";
 // import Resume from "./Resume";
 // import Navbar from "./Navbar";
 
@@ -56,9 +56,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Certificates />
       <About />
       <Skills />
-      <SimpleSlider />
       <Projects />
       <Contact />
       <Footer />
