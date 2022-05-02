@@ -27,51 +27,39 @@ class SimpleSlider extends Component {
       <Carousel className="max-w-[1000px] mx-auto">
         <div>
           <img src={Image1} alt="Image1" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image2} alt="Image2" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image3} alt="Image3" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image4} alt="Image4" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image5} alt="Image5" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image6} alt="Image6" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image7} alt="Image7" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image8} alt="Image8" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image9} alt="Image9" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image10} alt="Image10" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image11} alt="Image11" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
         <div>
           <img src={Image12} alt="Image12" />
-          {/* <p className="legend">Legend 1</p> */}
         </div>
       </Carousel>
     );
