@@ -21,9 +21,6 @@ const Navbar = () => {
         {/* menu */}
         <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow ">
           <li className="hover:text-red-600 hover:text-3xl">
-            <a href="#home">Home</a>
-          </li>
-          <li className="hover:text-red-600 hover:text-3xl">
             <a href="#about">About</a>
           </li>
           <li className="hover:text-red-600 hover:text-3xl">
