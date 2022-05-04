@@ -1,6 +1,3 @@
-// import React from "react";
-// import Photo from "../assets/photo.jpeg";
-
 const About = () => {
   return (
     <>
